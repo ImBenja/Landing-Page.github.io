@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*Colors*/
+
+  /*Primary*/
+  --Pink: hsl(322, 100%, 66%);
+
+  /*Neutral*/
+
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-dark-cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(35, 35, 35);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--Pink);
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+.button2,
+.button3 {
+  background-color: var(--Pink);
+  color: white;
+  padding: 0.8rem 3rem;
+  border: none;
+  font-family: "Poppins";
+  text-align: center;
+  margin-top: 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+.button2:hover,
+.button3:hover {
+  background-color: rgb(184, 34, 172);
+  cursor: pointer;
+}
+
+.Title-Free,
+.title-card,
+.title-comi-free {
+  color: var(--Very-dark-cyan);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.Sub-Title-Free,
+.sub-title-card {
+  margin-top: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: var(--Grayish-Blue);
+}
+
+.Card,
+.Contai-Free-2 {
+  background-color: white;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+header {
+  background-image: url(../img/bg-hero-mobile.svg);
+  background-color: var(--Very-Pale-Cyan) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.2rem;
+}
+
+.Contai-Logo-inscri {
+  display: flex;
+  align-items: center;
+  gap: 6.5rem;
+  padding: 1rem 0rem;
+}
+
+.Logo .LogoImg {
+  height: 25px;
+}
+
+.button {
+  background-color: white;
+  color: var(--Very-dark-cyan);
+  border-radius: 20px;
+  border: none;
+  padding: 0.4rem 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(239, 239, 239);
+}
+
+.Contai-Free {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.Contai-Free .Title-Free {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.Contai-Free .Sub-Title-Free {
+  color: var(--Very-dark-cyan);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.Img-Free-Contai {
+  margin-top: 2.5rem;
+}
+
+.Img-Free-Contai .Img-Free {
+  height: 250px;
+}
+
+main {
+  background-color: rgb(247, 244, 237);
+  padding: 1.5rem;
+}
+
+.Cards {
+  margin-top: 6rem;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.Card-Text .title-card {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.Card-Text .sub-title-card {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.Img-Card {
+  height: 200px;
+}
+
+.Comi-Free-2 {
+  margin: 6rem 0 0 0;
+}
+
+.Contai-Free-2 {
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+}
+
+.Comi-Free-2 .title-comi-free {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+footer {
+  background-color: var(--Very-dark-cyan);
+  margin-top: -6rem;
+  padding: 2rem 2rem;
+  z-index: -1;
+  color: white;
+}
+
+.Logo-Pie {
+  margin-top: 10rem;
+}
+
+.FlexFooter {
+  margin-top: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Ubi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 280px;
+  word-wrap: break-word;
+}
+
+.Tel,
+.Mail {
+  margin-top: 25px;
+}
+
+.Tel a,
+.Mail a {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.Lista {
+  margin-top: 3rem;
+  display: flex;
+  gap: 20px;
+}
+
+.Lista ul {
+  list-style-type: none;
+}
+
+.Lista ul li {
+  padding: 10px;
+}
+
+.Lista ul li a {
+  color: white;
+  text-decoration: none;
+}
+.Lista ul li a:hover {
+  text-decoration: underline;
+}
+
+.Redes-Sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 3rem;
+}
+
+.Redes-Sociales i {
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 1.1em;
+  transition: all 0.5s ease;
+}
+
+.Redes-Sociales i:hover {
+  color: var(--Pink);
+  border: 1px solid var(--Pink);
+  cursor: pointer;
+}
+
+.Copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  header {
+    background-image: url(../img/bg-hero-desktop.svg);
+    background-position: center;
+    padding: 2rem;
+  }
+
+  .Contai-Logo-inscri {
+    gap: 60rem;
+    justify-content: center;
+  }
+
+  .Logo .LogoImg {
+    height: 30px;
+  }
+
+  .button {
+    padding: 0.7rem 3rem;
+  }
+
+  .Contai-Free {
+    display: flex;
+    align-items: center;
+    margin-top: -0.2rem;
+    gap: 6rem;
+  }
+
+  .Contai-Text-Free {
+    text-align: left;
+    padding-left: 5rem;
+  }
+
+  .Contai-Free .Title-Free {
+    font-size: 2.7rem;
+  }
+
+  .Img-Free-Contai .Img-Free {
+    height: 450px;
+    margin-right: 4rem;
+  }
+
+  .Cards {
+    padding: 0 4rem;
+  }
+
+  .Card {
+    flex-direction: row;
+    padding: 4rem;
+    text-align: left;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .Card-Text {
+    padding: 0 2rem;
+  }
+
+  .Card-Text .title-card {
+    font-size: 2rem;
+  }
+
+  .Card-Text .sub-title-card {
+    padding-right: 7rem;
+  }
+
+  .Img-Card {
+    height: 300px;
+    margin-right: 5rem;
+    margin-left: 4rem;
+  }
+
+  .Card:nth-of-type(1),
+  .Card:nth-of-type(3) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .Comi-Free-2 {
+    padding: 0 22rem;
+  }
+
+  .Contai-Free-2 .title-comi-free {
+    font-size: 1.8rem;
+  }
+
+  .button3 {
+    padding: 1.1rem 4rem;
+  }
+
+  .Logo-Pie {
+    margin-left: 5rem;
+  }
+
+  .FlexFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 230px;
+    margin-top: 40px;
+  }
+
+  .Lista {
+    gap: 70px;
+    margin-top: -2rem;
+  }
+
+  .Redes-Sociales {
+    margin-top: -2rem;
+  }
+
+  .Copy {
+    text-align: right;
+  }
+}
